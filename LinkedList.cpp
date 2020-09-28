@@ -18,16 +18,16 @@ Node *insertNode(int data)
 }
 void showData(Node *head)
 {
-    int count = 0;
+    // int count = 0;
     Node *temp = head;
     while (temp != NULL)
     {
-        count++;
-        // cout << temp->data << " ";
+        // count++;
+        cout << temp->data << " ";
         temp = temp->next;
     }
 
-    cout << count;
+    // cout << count;
 }
 
 int main()
