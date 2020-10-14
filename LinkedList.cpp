@@ -18,17 +18,22 @@ Node *insertNode(int data)
 }
 void showData(Node *head)
 {
-    // int count = 0;
     Node *temp = head;
     while (temp != NULL)
     {
-        // count++;
         cout << temp->data << " ";
         temp = temp->next;
     }
-
-    // cout << count;
 }
+// Node *deleteFirstNode(Node *head)
+// {
+//     Node *temp = head;
+//     if (head == NULL)
+//         return;
+
+//     head = temp->next;
+//     return head;
+// }
 
 int main()
 {
@@ -38,5 +43,6 @@ int main()
     head->next->next->next = insertNode(9);
 
     showData(head);
+    // deleteFirstNode()
     return 0;
 }

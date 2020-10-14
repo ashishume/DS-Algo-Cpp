@@ -49,19 +49,19 @@ Node *deleteFirstNode(Node *head)
     head = temp->next;
     return head;
 }
-int searchNode(Node *head, int data)
-{
-    int count = 0;
-    Node *temp = head;
-    while (temp != NULL)
-    {
-        if (temp->data == data)
-            return count;
-        count++;
-        temp = temp->next;
-    }
-    return 0;
-}
+// int checkEquality(Node *first, Node *second)
+// {
+//     int count = 0;
+//     Node *temp = head;
+//     while (temp != NULL)
+//     {
+//         if (temp->data == data)
+//             return count;
+//         count++;
+//         temp = temp->next;
+//     }
+//     return 0;
+// }
 
 int main()
 {
