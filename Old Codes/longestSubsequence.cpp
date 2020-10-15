@@ -11,13 +11,13 @@ int findLongest(string str, int first, int last)
         return 2;
 
     if (str[first] == str[last])
-        return findLongest(str, first + 1, last - 1)+2;
+        return findLongest(str, first + 1, last - 1) + 2;
     else
         return max(findLongest(str, first + 1, last), findLongest(str, first, last - 1));
 }
 int main()
 {
-    string str = "BBABCBCAB";
+    string str = "abca";
     int n = str.length();
     cout << findLongest(str, 0, n - 1) << endl;
 }
